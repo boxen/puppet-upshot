@@ -1,4 +1,8 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+# Install Upshot
+class upshot () {
+  package { 'Upshot':
+    ensure   => installed,
+    provider => 'appdmg',
+    source   => "http://dl.upshot.it/UpShot-1.1.dmg",
+  }
 }
